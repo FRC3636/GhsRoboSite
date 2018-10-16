@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<link rel="icon" href="images2015/GrantLogo.gif" />
+		<link rel="stylesheet" media="screen and (min-device-width: 801px)" href="all.css" />
+		<title>
+		Grant Robotics
+		</title>
+	</head>
+	<script src="jquery-2.1.4.min.js"></script>
+	<body id="everything">
+		<nav id="navbar">
+			<ul>
+				<b><li><a href="index.html">Home</a></li></b>
+				<li><a href="#">Competitions</a>
+					<ul>
+						<li><a href="FRC.html">FRC</a></li>
+						<li><a href="bunnyBots.html">BunnyBots</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Resources</a>
+					<ul>
+						<li><a href="https://github.com/FRC3636" target="_blank">GitHub (External Link)</a></li>
+					</ul>
+				</li>
+				<li><a href="sponsors.html">Sponsors</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div id="outerDiv">
+			<div>
+				<p>Useful Links:
+				<u><a href="http://team1540.org/bunnybots/" target="_blank">BunnyBots Official Website</a></u> & 
+				<u><a href="https://docs.google.com/document/d/1ItMayhq-m5vM8F0JOjG9dMsjMT1eik94Yukpg8JIuLo/edit" target="_blank">Rules</a></u>
+				</p>
+				<p>This year's competition is over, thank you for your time</p>
+				<p class="biggestText">BunnyBots</p>
+				<div class="bubble" id="bunnyBots"></div>
+					<p class="bigText">What is BunnyBots?</p>
+					<p> BunnyBots is a local robotics competition held annually at Catlin Gabel High School 
+					in Portland, OR. The build season lasts 12 weeks, with the type of competition varying each
+					year. As this event usually takes place before FRC, it is a great way to practice for it. 
+					If you wish to know more, <u><a href="http://team1540.org/bunnybots/" target="_blank">click here</a></u> 
+					for their website.</p>
+				<div>
+					<p class="bigText">Competition Overview</p>
+					<p> This year, the competition is Round-a-BOUT. After a brief 10 second autonomous period,
+					robots can earn points by crossing lines along a figure 8 pattern, and deduct points from
+					the enemy alliance by shooting blue N-Strike Elite Nerf darts at the opposing team's robots.
+					Signifigant points can be earned for placing bunnies into their "burrows" by the end of the
+					2:20 teleop period. Building an agile, robust robot will be key to this year's faster competition,
+					as high-speed ramming of other robots is allowed. Build season has already started, and our robot is a
+					work in progress. We'll have information up on our robot as soon as it is available. For more
+					information and rules on specific guidelines, please reference the
+					<u><a href="https://docs.google.com/document/d/1ItMayhq-m5vM8F0JOjG9dMsjMT1eik94Yukpg8JIuLo/edit" target="_blank">official rules</a></u>.</p>
+					<p>Don't have the time nor the patience to read the rules? Enjoy some slides we've put together!</p>
+					<p class="biggerText">How Scoring Works</p>
+					<p>If the buttons are too tiny to press on your device remember you can always just click on the slide itself!</p>
+					<iframe src="https://docs.google.com/presentation/d/1qF1Tt0rNOMvfk7B4Y_yri1aZffnTnj8MXQCzWEn7r34/embed?start=false&loop=false&delayms=5000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+					<p class="biggerText">Field Overview</p>
+					<img src="images2015/fieldDiagram.png">
+				</div>
+				<div>
+					<p class="bigText">Important Dates</p>
+					<p>Friday, December 18th, 5:30PM to 9:30PM: Pit Free for Set Up and Robot Unloading</p>
+					<p>Saturday, December 19th, 8:00AM to 9:30AM: Additional Pit Set Up and Robot Unloading Period</p>
+					<p>Saturday, December 19th, 8:30AM to 9:30AM: Field Open for Teams to Practice, and Competition Begins</p>
+					<p>BunnyBots is less official than FRC, so the time when competitions end is unclear and is based on how long the pools themselves last.</p>
+				</div>
+				</div>
+			</div>
+		<script>
+			var inputString = "";
+			function readInput(evt) {
+				var charCode = evt.which || evt.keyCode;
+				var charStr = String.fromCharCode(charCode);
+				inputString = inputString + charStr;
+				if(inputString == "comicsans") {
+					document.getElementById('everything').style.fontFamily = "Comic Sans MS";
+					inputString = "";
+				}
+				if(inputString == "turn") {
+					document.getElementById('everything').style.transform = "rotate(10deg)";
+					var divs = document.getElementsByTagName("div");
+					for(var i = 0; i < divs.length; i++) {
+						divs[i].style.transform = "rotate(-5deg)";
+					}
+					inputString = "";
+				}
+				if(inputString == "yellow") {
+					document.getElementById('everything').style.color = "#ffff00";
+					inputString = "";
+				}
+				if(inputString == "fire") {
+					document.getElementById('everything').style.backgroundImage = "url(images2015/hellFire.gif)";
+					document.getElementById('everything').style.backgroundSize = "256px 256px";
+					inputString = "";
+				}
+				if(inputString == "blur") {
+					document.getElementById('everything').style.webkitFilter = "blur(10px)";
+					document.getElementById('everything').style.mozFilter = "blur(10px)";
+					inputString = "";
+				}
+				if(inputString == "dragon") {
+					document.getElementById('everything').style.backgroundImage = "url(images2015/Dragons.gif)";
+					document.getElementById('everything').style.backgroundSize = "256px 256px";
+					inputString = "";
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<link rel="icon" href="images2015/GrantLogo.gif" />
+		<link rel="stylesheet" media="screen and (min-device-width: 801px)" href="all.css" />
+		<title>
+		Grant Robotics
+		</title>
+	</head>
+	<script src="jquery-2.1.4.min.js"></script>
+	<body id="everything">
+		<nav id="navbar">
+			<ul>
+				<b><li><a href="index.html">Home</a></li></b>
+				<li><a href="#">Competitions</a>
+					<ul>
+						<li><a href="FRC.html">FRC</a></li>
+						<li><a href="bunnyBots.html">BunnyBots</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Resources</a>
+					<ul>
+						<li><a href="https://github.com/FRC3636" target="_blank">GitHub</a></li>
+					</ul>
+				</li>
+				<li><a href="sponsors.html">Sponsors</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div id="outerDiv">
+			<div>
+				<p>Useful Links:
+				<u><a href="https://firstfrc.blob.core.windows.net/frc2017/Manual/2017FRCGameSeasonManual.pdf" target="_blank">Manual</a></u>, 
+				<u><a href="http://www.firstinspires.org/resource-library/frc/competition-manual-qa-system" target="_blank">Downloads</a></u>, 						
+				<u><a href="https://firstfrc.blob.core.windows.net/frc2017/Manual/TeamUpdates/TeamUpdates-combined.pdf" target="_blank">Manual Updates</a></u>, & 
+				<u><a href="https://www.thebluealliance.com/team/3636/2016" target="_blank">Our Scores</a></u>
+				</p>
+				<p class="biggestText"> FRC (FIRST Robotics Competition) </p>
+				<h2 hidden>This year's competition is over, thanks for supporting us!</h2>
+					<div class="bubble" id="FRC"></div>
+					<p class="bigText"> What is FRC? </p>
+					<p> FRC is an annual competition that has a new challenge each year, much like BunnyBots.
+					FRC is a national competition where robots built in a mere 6 week build season
+					compete to perform a task. FRC awards many scholarships and is a great opportunity for
+					students who want to work in technological fields in the future. For more info on the official website, 
+					<u><a href="http://www.usfirst.org/roboticsprograms/frc" target="_blank">click here</a></u>.</p>
+					<div>
+						<p class="bigText">This Year's Competition Overview</p>	
+						<iframe src="https://www.youtube.com/embed/EMiNmJW7enI" frameborder="0" allowfullscreen hidden></iframe>
+						<iframe width="640" height="360" src="https://www.youtube.com/embed/HZbdwYiCY74" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<p>The competition this year is to, of course, score as many points as possible. The scoring system is explained in the video, which is actually very handy!  For any additional information please refer to the links at the top.</p>
+						<p>This year our robot is focusing on lifting cubes into switches.</p>
+					</div>
+					<div>
+						<p class="bigText">Important Dates</p>
+						<p>Lake Oswego Qualifying Event: Mar 30 - Apr 1 2017</p>
+						<p>Wilsonville Qualifying Event: Mar 9 - Mar 11 2017</p>
+						<p></p>
+					</div>
+				</div>			
+			<script>
+			var inputString = "";
+			function readInput(evt) {
+				var charCode = evt.which || evt.keyCode;
+				var charStr = String.fromCharCode(charCode);
+				inputString = inputString + charStr;
+				if(inputString == "comicsans") {
+					document.getElementById('everything').style.fontFamily = "Comic Sans MS";
+					inputString = "";
+				}
+				if(inputString == "turn") {
+					document.getElementById('everything').style.transform = "rotate(10deg)";
+					var divs = document.getElementsByTagName("div");
+					for(var i = 0; i < divs.length; i++) {
+						divs[i].style.transform = "rotate(-5deg)";
+					}
+					inputString = "";
+				}
+				if(inputString == "yellow") {
+					document.getElementById('everything').style.color = "#ffff00";
+					inputString = "";
+				}
+				if(inputString == "fire") {
+					document.getElementById('everything').style.backgroundImage = "url(images2015/hellFire.gif)";
+					document.getElementById('everything').style.backgroundSize = "256px 256px";
+					inputString = "";
+				}
+				if(inputString == "blur") {
+					document.getElementById('everything').style.webkitFilter = "blur(10px)";
+					document.getElementById('everything').style.mozFilter = "blur(10px)";
+					inputString = "";
+				}
+				if(inputString == "dragon") {
+					document.getElementById('everything').style.backgroundImage = "url(images2015/Dragons.gif)";
+					document.getElementById('everything').style.backgroundSize = "256px 256px";
+					inputString = "";
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<link rel="icon" href="images2015/GrantLogo.gif" />
+		<link rel="stylesheet" media="screen and (min-device-width: 801px)" href="all.css" />
+		<title>
+		Grant Robotics
+		</title>
+	</head>
+	<script src="jquery-2.1.4.min.js"></script>
+	<body id="everything">
+		<nav id="navbar">
+			<ul>
+				<b><li><a href="index.html">Home</a></li></b>
+				<li><a href="#">Competitions</a>
+					<ul>
+						<li><a href="FRC.html">FRC</a></li>
+						<li><a href="bunnyBots.html">BunnyBots</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Resources</a>
+					<ul>
+						<li><a href="https://github.com/FRC3636" target="_blank">GitHub</a></li>
+						<!-- <li><a href="oldsite/index.html">Google SITE</a></li> this is a test list thingy-->
+					</ul>
+				</li>
+				<li><a href="sponsors.html">Sponsors</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>		<div id="outerDiv">
+			<div>
+				<div id="titlebar">
+					<img src="images2015/grantRobotics.png"> 
+				</div>
+				<p id="biggestText"> Who Are We? </p>
+				<p>We are Grant High School's robotics
+				team in Portland, OR. We participate in local robotics competitions like BunnyBots and FRC. Grant Robotics has
+				been a creative and resourceful team since 2007. We have won 1st and 2nd place in BunnyBots several times, and we
+				look forward to doing it again with the help of our amazing sponsors and mentors! If you want more information, please 
+				contact us at <u>ghsrobotics3636@gmail.com</u>, or <u><a href="contact-us.html">click here</a></u>.</p>
+				<p>If the buttons are too tiny to press on your device remember you can always just click on the slide itself!</p>
+				<iframe src="https://docs.google.com/presentation/d/1YAAIYeHhruUCjP-gWDRV6uk6FyOlLLawFSiJg4nsiMM/embed?start=true&loop=true&delayms=5000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+				<u><a href="https://photos.google.com/share/AF1QipNBnny0zts6bELHc2XI9HDxH5C87GvvrWelBIByl5273fwx6yeXDmGEEmYvMaDdEg?key=TTVBVFZvMFRZNC1ZcG5SNzJ6amY4MUNjeFdWM19B" target="_blank">Last Year's Pics!</a></u>
+			</div>
+		<script>
+			var inputString = "";
+			function readInput(evt) {
+				var charCode = evt.which || evt.keyCode;
+				var charStr = String.fromCharCode(charCode);
+				inputString = inputString + charStr;
+				if(inputString == "comicsans") {
+					document.getElementById('everything').style.fontFamily = "Comic Sans MS";
+					inputString = "";
+				}
+				if(inputString == "turn") {
+					document.getElementById('everything').style.transform = "rotate(10deg)";
+					var divs = document.getElementsByTagName("div");
+					for(var i = 0; i < divs.length; i++) {
+						divs[i].style.transform = "rotate(-5deg)";
+					}
+					inputString = "";
+				}
+				if(inputString == "yellow") {
+					document.getElementById('everything').style.color = "#ffff00";
+					inputString = "";
+				}
+				if(inputString == "fire") {
+					document.getElementById('everything').style.backgroundImage = "url(images2015/hellFire.gif)";
+					document.getElementById('everything').style.backgroundSize = "256px 256px";
+					inputString = "";
+				}
+				if(inputString == "blur") {
+					document.getElementById('everything').style.webkitFilter = "blur(10px)";
+					document.getElementById('everything').style.mozFilter = "blur(10px)";
+					inputString = "";
+				}
+				if(inputString == "dragon") {
+					document.getElementById('everything').style.backgroundImage = "url(images2015/Dragons.gif)";
+					document.getElementById('everything').style.backgroundSize = "256px 256px";
+					inputString = "";
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,263 @@
+body{
+	font-family: Georgia, serif;
+	background: url("images2015/background.png");
+	background-position: right top;
+	background-attachment: fixed;
+}
+
+div{
+	padding: 15px;
+	border-radius: 10px;
+	position: relative;
+	margin: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(0,0,0,.05);
+	min-width: 600px;
+}
+
+div div{
+	font-size: 20px;
+}
+
+input{
+	width: 200px;
+}
+
+nav{
+	background-color: rgb(20, 72, 125);
+	width: 100%;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	list-style-type: none;
+	text-align: center;
+	z-index: 3;
+	font-size: 200%;
+	min-width: 1038px;
+	box-shadow: 0px 1px 5px;
+	transition: text-shadow 1s;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+nav a{
+	color: white;
+}
+
+nav a:hover{
+	/*text-shadow:
+  	-1px -1px 0 rgba(255, 255, 255, 0.15),
+  	1px -1px 0 rgba(255, 255, 255, 0.15),
+  	-1px 1px 0 rgba(255, 255, 255, 0.15),
+  	1px 1px 0 rgba(255, 255, 255, 0.15);*/
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+	width: 225px;
+}
+
+nav ul {
+	padding: 0 20px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+
+nav ul:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+nav ul ul {
+	padding: 0;
+	position: absolute;
+	top: 100%;
+	background-color: rgb(30, 72, 125);
+}
+
+nav ul ul li {
+	float: none;
+	position: relative;
+	font-size: 80%;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+nav ul ul ul {
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+#navbar li{
+	float: left;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+a{
+	text-decoration: none;
+	color: rgba(10,10,10,1);
+	transition: color 1s, text-shadow 1s;
+}
+
+a:hover{
+	/*text-shadow:
+  	-1px -1px 0 rgba(255, 255, 255, 0.1),
+  	1px -1px 0 rgba(255, 255, 255, 0.1),
+  	-1px 1px 0 rgba(255, 255, 255, 0.1),
+  	1px 1px 0 rgba(255, 255, 255, 0.1);*/
+}
+
+iframe{
+	width: 100%;
+	height: 350px;
+	margin: auto;
+}
+
+table{
+	margin: auto;
+	width: 100%;
+}
+
+td{
+	width: 50%;
+	padding: 15px;
+	background-color: rgba(0,0,0,.1);
+	border-radius: 5px;
+}
+
+img{
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+iframe{
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 600px;
+}
+
+.bigText{
+	font-size: 110%;
+}
+
+.biggerText{
+	font-size: 150%;
+	text-align: center;
+}
+
+.biggestText{
+	font-size: 250%;
+	text-align: center;
+	padding: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;	
+	background: linear-gradient(to right, rgba(0,0,0,0) 5%, rgba(48,87,153,.5) 50%, rgba(0,0,0,0) 95%);
+}
+
+.bubble{
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+.warning{
+	color: red;
+	text-align: center;
+	font-size: 70%;
+}
+
+.slides{
+	position: absolute;
+	height: 375px;
+	width: 700px;
+	border-radius: 20%;
+	overflow: hide;
+}
+
+#slideDiv{
+	height: 400px;
+	width: 100%;
+	border-radius: 0px;
+	background-color: rgb(30,30,30);
+	margin: auto;
+	padding: 5px;
+	overflow-x: scroll;
+}
+
+#slide1{
+    left: 0;
+}
+
+#slide2{
+    left: 800px;
+}
+
+#slide3{
+    left: 1600px;
+}
+
+#slide4{
+    left: 2400px;
+}
+
+#slide5{
+    left: 3200px;
+}
+
+#slide6{
+    left: 4000px;
+}
+
+#FRC{
+	background: rgb(256, 256, 256) url("images2015/FRC.gif") no-repeat center center;
+	background-size: 300px;
+}
+
+#bunnyBots{
+	background: rgb(46, 49, 146) url("images2015/bunnyBots.jpg") no-repeat center center;
+	background-size: 300px;
+}
+
+#outerdiv{
+	background-color: white;
+	max-width: 1000px;
+	min-width: 650px;
+	top: 67px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 30px rgba(0,0,0,.5);
+}
+
+#titlebar{
+	font-size: 170%;
+	text-align: center;
+	opacity: 1;
+	box-shadow: 0px 0px 0px;
+	border-radius: 0px;
+}
+
+#phonesAreStupid{
+	max-width: 100%;
+	min-width: 50%;
+}
+
+#cat{
+	background: rgba(256, 256, 256,0.7) url("images2015/cat.png") no-repeat center center;
+	background-size: 125px;
+}
+
+#comment{
+	font-size: 75%;
+}

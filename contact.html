@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<link rel="icon" href="GrantLogo.gif" />
+		<link rel="stylesheet" media="screen and (min-device-width: 801px)" href="all.css" />
+		<title>
+		Grant Robotics - Contact Us
+		</title>
+	</head>
+	<body>
+		<nav id="navbar">
+			<ul>
+				<b><li><a href="index.html">Home</a></li></b>
+				<li><a href="#">Competitions</a>
+					<ul>
+						<li><a href="FRC.html">FRC</a></li>
+						<li><a href="bunnyBots.html">BunnyBots</a></li>
+					</ul>
+				</li>
+				
+				<li><a href="sponsors.html">Sponsors</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div id="outerdiv">
+			<div>
+			<p hidden class="biggerText">Contact Us</p>
+			<p class="biggerText">Contact us by email at <u>ghsrobotics3636@gmail.com</u></p>
+			<p class="biggerText">If you would like to be added to our email list about meetings and competitions, please contact us and we will add you. </p>
+			<p class="biggerText"> Link to our <a href="https://github.com/FRC3636"><u>GitHub</u></a></p>
+			
+				<div id="emailBox">
+					<form action="sendmessage.php" method="post">
+					   <input type="hidden" value="ghsrobotics3636@gmail.com" name="send_to" />
+					   <input type="hidden" value="ghsrobotics3636@gmail.com" name="send_from" />
+					   <input type="hidden" value="thank-you.html" name="redirect" />
+					   <input type="hidden" value="Contact Form Submission" name="subject" />
+					   <p>Name<br />
+					   <input type="text" name="name" /></p>
+					   <p>Email<br />
+					   <input type="text" name="email" /></p>
+					   <p>Phone*<br />
+					   <input type="text" name="phone" /></p>
+					   <p>Comments<br />
+					   <textarea type="textarea" name="comments" id="phonesAreStupid"></textarea></p>
+					   <input type="submit" value="Submit" onclick="thank_you()"/>
+					   <p id="comment">*Not required but recommended</p>
+					</form> 
+				</div>
+			</div>
+		</div>
+		<script>
+			var inputString = "";
+			function readInput(evt) {
+				var charCode = evt.which || evt.keyCode;
+				var charStr = String.fromCharCode(charCode);
+				inputString = inputString + charStr;
+				if(inputString == "comicsans") {
+					document.getElementById('everything').style.fontFamily = "Comic Sans MS";
+					inputString = "";
+				}
+				if(inputString == "turn") {
+					document.getElementById('everything').style.transform = "rotate(10deg)";
+					var divs = document.getElementsByTagName("div");
+					for(var i = 0; i < divs.length; i++) {
+						divs[i].style.transform = "rotate(-5deg)";
+					}
+					inputString = "";
+				}
+				if(inputString == "yellow") {
+					document.getElementById('everything').style.color = "#ffff00";
+					inputString = "";
+				}
+				if(inputString == "fire") {
+					document.getElementById('everything').style.backgroundImage = "url(images2015/hellFire.gif)";
+					document.getElementById('everything').style.backgroundSize = "256px 256px";
+					inputString = "";
+				}
+				if(inputString == "blur") {
+					document.getElementById('everything').style.webkitFilter = "blur(10px)";
+					document.getElementById('everything').style.mozFilter = "blur(10px)";
+					inputString = "";
+				}
+				if(inputString == "dragon") {
+					document.getElementById('everything').style.backgroundImage = "url(images2015/Dragons.gif)";
+					document.getElementById('everything').style.backgroundSize = "256px 256px";
+					inputString = "";
+				}
+			}
+		</script>
+	</body>
+</html>
