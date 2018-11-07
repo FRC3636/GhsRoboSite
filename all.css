@@ -1,5 +1,5 @@
 body{
-	font-family: Georgia, serif;
+	font-family: "Trebuchet MS", helvetica, sans-serif;
 	background: url("images2015/background.png");
 	background-position: right top;
 	background-attachment: fixed;
@@ -12,8 +12,9 @@ div{
 	margin: 10px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: rgba(0,0,0,.05);
+	background-color: rgba(255,255,255);
 	min-width: 600px;
+	color: rgb(20,72,125);
 }
 
 div div{
@@ -25,7 +26,7 @@ input{
 }
 
 nav{
-	background-color: rgb(20, 72, 125);
+	background-color: rgba(255,255,255);
 	width: 100%;
 	display: block;
 	position: fixed;
@@ -38,24 +39,30 @@ nav{
 	min-width: 1038px;
 	box-shadow: 0px 1px 5px;
 	transition: text-shadow 1s;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-family: "Trebuchet MS", helvetica, sans-serif;
+
 }
 
 nav a{
 	color: white;
+	padding:1%;
+	border-radius: 4px;
+	border-style: solid;
+	border-color: rgb(20,72,125);
 }
 
 nav a:hover{
-
 }
 
 nav ul ul {
-	display: none;
+	
 }
-
+nav ul li a{
+	color:rgb(20,72,125);
+}
 nav ul li:hover > ul {
 	display: block;
-	width: 225px;
+	width: 150px;
 }
 
 nav ul {
@@ -72,10 +79,11 @@ nav ul:after {
 }
 
 nav ul ul {
-	padding: 0;
+	margin-top:5.6px;
 	position: absolute;
 	top: 100%;
-	background-color: rgb(30, 72, 125);
+	background-color: rgba(255, 255, 255);
+	display: none;
 }
 
 nav ul ul li {
@@ -85,11 +93,11 @@ nav ul ul li {
 	padding-top: 10px;
 	padding-bottom: 5px;
 }
-
 nav ul ul ul {
 	position: absolute;
 	left: 100%;
 	top: 0;
+	background-color: rgb(255,255,255);
 }
 
 #navbar li{
@@ -100,12 +108,11 @@ nav ul ul ul {
 
 a{
 	text-decoration: none;
-	color: rgba(10,10,10,1);
+	color: rgb(20,72,125);
 	transition: color 1s, text-shadow 1s;
 }
 
 a:hover{
-	
 }
 
 iframe{
@@ -131,7 +138,15 @@ img{
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-
+img[src="https://www.firstinspires.org/sites/default/files/uploads/resource_library/brand/FIRST_Vertical_RGB.jpg"]{
+	display: block;
+	width:75%;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	margin-bottom:10px;
+}
 iframe{
 	width: 100%;
 	margin-top: 5px;
@@ -151,10 +166,9 @@ iframe{
 .biggestText{
 	font-size: 250%;
 	text-align: center;
-	padding: 0px;
 	padding-top: 5px;
 	padding-bottom: 5px;	
-	background: linear-gradient(to right, rgba(0,0,0,0) 5%, rgba(48,87,153,.5) 50%, rgba(0,0,0,0) 95%);
+	
 }
 
 .bubble{
@@ -214,13 +228,9 @@ iframe{
 }
 
 #FRC{
-	background: rgb(256, 256, 256) url("images2015/FRC.gif") no-repeat center center;
-	background-size: 300px;
 }
 
 #bunnyBots{
-	background: rgb(46, 49, 146) url("images2015/bunnyBots.jpg") no-repeat center center;
-	background-size: 300px;
 }
 
 #outerdiv{
