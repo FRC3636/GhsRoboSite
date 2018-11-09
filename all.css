@@ -52,6 +52,7 @@ nav a{
 }
 
 nav a:hover{
+	background-color:rgba(200,200,200,.33);
 }
 
 nav ul ul {
@@ -79,14 +80,17 @@ nav ul:after {
 }
 
 nav ul ul {
+	margin-left:5.6px;
 	margin-top:5.6px;
 	position: absolute;
 	top: 100%;
 	background-color: rgba(255, 255, 255);
 	display: none;
+	box-shadow:0px 1px 5px;
 }
 
 nav ul ul li {
+	
 	float: none;
 	position: relative;
 	font-size: 80%;
@@ -172,6 +176,7 @@ iframe{
 }
 
 .bubble{
+	
 	border-radius: 50%;
 	height: 300px;
 	width: 300px;
